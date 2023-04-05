@@ -1,0 +1,108 @@
+$colorbg: white;
+$colorft: rgb(7, 5, 26);
+$colornaranja: #eaa226;
+$colornude: #e4be91;
+$colorazul: #063396;
+$colormarron: #ab7863;
+$colorfrio: #a8b0c5;
+
+
+.header {
+    background: url(../galeria/postres\ inicio.png) no-repeat center;
+    background-size: cover;
+    min-height: 80vh;
+    font-size: 1.5rem;
+    opacity: 100%;
+    color: white;
+    height: 80%;
+
+
+    .navbar {
+        background-color: transparent !important;
+        position: sticky;
+        top: 0;
+        width: 100%;
+        z-index: 999;
+        transition: background-color 0.5s ease;
+        font-family: 'Montserrat', sans-serif;
+
+        &:hover {
+            color: $colornaranja;          
+            transition: all 0.2s ease-in-out;
+
+
+        }
+
+    }
+}
+
+.header1 {
+
+    font-size: 1.5rem;
+    opacity: 100%;
+
+
+
+    .navbar {
+        background-color: $colornaranja !important;
+    }
+
+
+
+    ul {
+        list-style: none;
+        padding: 0;
+        color: black;
+        opacity: 100%;
+
+
+        li {
+            display: inline-block;
+            position: relative;
+            align-content: center;
+            padding: 10px;
+            margin: auto;
+
+            a {
+                font: {
+
+                    family: 'Montserrat', sans-serif;
+                    weight: 700;
+                    size: 5rem;
+                }
+
+
+                line-height: 2rem;
+
+            }
+        }
+    }
+}
+
+#logo{
+    &:hover {       
+        transition: 0.5s;
+        transform: rotate(15deg);
+    }
+
+    &:active {
+        transition: 0.5s;
+    }
+}
+.offcanvas {
+    background-color: $colorft;
+
+}
+.nav {
+    margin-bottom: 30px;
+    padding: bottom 30px;
+}
+
+.dropdown-item {
+    font-size: 1rem;
+
+}
+
+.navbar-toggler-icon {
+    color: black;
+}

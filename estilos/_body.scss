@@ -1,0 +1,388 @@
+$colorbg: white;
+$colorft: rgb(7, 5, 26);
+$colornaranja: #eaa226;
+$colornude: #e4be91;
+$colorazul: #063396;
+$colormarron: #ab7863;
+$colorfrio: #a8b0c5;
+$form-bg-color: #c6cde02f;
+$form-border-color: #a8b0c5;
+$form-primary-color: black;
+
+
+
+
+
+@mixin fontStyle {
+    font-family: 'Montserrat', sans-serif;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+h1 {
+
+    font-size: 3.5rem;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+h3 {
+    text-align: center;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2rem;
+    padding: 30px;
+}
+
+h4 {
+    @include fontStyle ();
+}
+
+h5 {
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    color: $colorft;
+}
+
+.link {
+    color: $colorfrio;
+    align-content: center;
+    list-style: none;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.ubicacion {
+    background-color: rgb(218, 209, 209);
+    color: black;
+}
+
+
+
+.container-fluid {
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    overflow: hidden;
+    color: rgb(255, 255, 255);
+
+}
+
+.contact {
+    padding: .9rem;
+    overflow: hidden;
+    color: rgb(18, 19, 19);
+}
+
+.contact label,
+.contact input,
+.contact textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 8px;
+}
+
+.contact label {
+    font-weight: 700;
+
+}
+
+.contact input:not([type="submit"]),
+.contact textarea {
+    border: none;
+    margin-bottom: 10px;
+    font-size: 20px;
+    outline: none;
+    color: black;
+}
+
+.contact textarea {
+    min-height: 100px;
+
+}
+
+input[type="submit"] {
+    padding: 10px;
+    border: none;
+    color: black;
+    font-size: 20px;
+}
+
+.btn {
+    font-weight: 600;
+    color: white;
+    background-color: $colorft;
+    border-color: $colorft;
+    border-radius: .2rem;
+    margin: 10px;
+    justify-self: center;
+    width: 100%;
+    transition: 0.5s;
+
+    &:hover {
+        background-color: $colornaranja;
+    }
+
+}
+
+
+
+#formaPresupuesto {
+    padding: 10px;
+    margin: 10px;
+    background-color:$colorfrio;
+    color: white;
+
+}
+
+.button {
+    background: $colornaranja;
+    transition: 0.5s;
+}
+
+@media (hover: hover) {
+    .button:hover {
+        background: $colorfrio;
+        color: #fff;
+    }
+
+
+}
+
+#foto1 {
+    padding: 5%;
+    max-width: 500px;
+    align-self: center;
+    justify-self: center;
+}
+
+
+.quienesSomos {
+    height: 100%;
+    width: 100%;
+    color: black;
+    background-color: $colorbg;
+    padding: 2%;
+
+}
+
+.equipo {
+    height: 100%;
+    width: 100%;
+    color: white;
+    background-color: $colornaranja;
+    padding: 2%;
+
+}
+
+.fotoEdward {
+    max-width: 520px;
+    align-self: center;
+    justify-self: center;
+    padding-bottom: 3%;
+}
+
+.fotoCatering {
+    max-width: 450px;
+    align-self: center;
+    justify-self: center;
+    padding-bottom: 10px;
+    padding-top: 50px;
+    margin: 5%;
+}
+
+.servicios {
+    height: 100%;
+    background-color: $colorfrio;
+    width: 100%;
+    color: white;
+    padding: 2%;
+
+}
+
+.capacitaciones {
+    height: 70%;
+    background-color: $colornaranja;
+    width: 100%;
+    color: white;
+    padding: 2%;
+    font-size: 1.8rem;
+}
+
+.formularioCursos {
+    height: 100%;
+    background-color: $colorfrio;
+    width: 100%;
+    color: white;
+    padding: 2%;
+    font-size: 1.2rem;
+
+}
+
+.accordion-header {
+    background-color: $colorbg;
+    color: black;
+}
+
+.accordion-item {
+    background-color: $colorbg;
+    font-size: 1.1rem;
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+}
+
+.accordion-button {
+    background-color: $colorbg;
+    font-size: 1.3rem;
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    transition: 0.9s;
+
+    &:hover {
+        background-color: $colornaranja;
+        transition: 0.3s;
+        color: black;
+    }
+
+    &:active {
+        background-color: $colornaranja;
+        transition: 0.5s;
+        color: black;
+    }
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: $colorfrio;
+    color: $colorft;
+    box-shadow: 0 1px 2px rgba(7, 5, 26, 0.644), inset 0 0 0 1px $colorfrio;
+}
+
+
+#carruselEquipo {
+    max-width: 500px;
+    padding: 10px 0 10px 10px;
+    align-self: center;
+
+    .item img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .control-prev-icon,
+    .carousel-control-next-icon {
+        font-size: 1rem;
+    }
+
+}
+
+#carruselCreaciones {
+    max-width: 500px;
+    max-height: 600px;
+    padding: 10px 0 10px 10px;
+    align-self: center;
+
+    .item img {
+        max-width: 60%;
+        height: auto;
+    }
+
+    .control-prev-icon,
+    .carousel-control-next-icon {
+        font-size: 1rem;
+    }
+
+}
+
+
+.tarjetas {
+    background-color: $colorfrio;
+    display: flex;
+    max-width: 1300px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.card {
+    background-color: white;
+    color: $colorft;
+    font-family: 'monserrat', sans-serif;
+    transition: 0.6s;
+
+    &:hover {
+        transform: scale(1.02);
+
+    }
+
+}
+
+.creaciones {
+    height: 100%;
+    width: 100%;
+    color: white;
+    background-color: $colornaranja;
+    padding: 2%;
+
+}
+
+.servicioCatering {
+    color: black;
+    font-size: 1.2rem;
+    font-family: 'monserrat', sans-serif;
+    padding-top: 30px;
+
+    ul {
+        list-style: square;
+        padding-left: 20px;
+        color: black;
+        margin: 10px;
+        padding-top: 20px;
+
+        li {
+            margin: 10px;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.1rem;
+
+        }
+    }
+}
+
+.formCat {
+    background-color: $colorfrio;
+    max-width: 200vh;
+    margin: 5%;
+    padding: 5%;
+}
+
+.formContacto {
+    background-color: $colornaranja;
+    max-width: 200vh;
+    margin: 5%;
+    padding: 5%;
+}
+
+.formulario {
+    height: 100%;
+    color: $colorft;
+    padding-top: 20px;
+    background-color: #a8b0c575;
+}
+.formCont {
+    background-color: $colornaranja;
+    max-width: 200vh;
+    margin: 5%;
+    padding: 5%;
+}

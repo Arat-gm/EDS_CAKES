@@ -1,0 +1,68 @@
+$colorbg: white;
+$colorft: rgb(7, 5, 26);
+$colornaranja: #eaa226;
+$colornude: #e4be91;
+$colorazul: #063396;
+$colormarron: #ab7863;
+$colorfrio: #a8b0c5;
+$form-bg-color: #c6cde02f;
+$form-border-color: #a8b0c5;
+$form-primary-color: black;
+
+
+@mixin fontStyle {
+    font-family: 'Montserrat';
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.footer {
+    background-color: $colornude;
+    color: white;
+    width: 100%;
+    padding: 5%;
+}
+
+.containerfooter {
+    background-color: $colorft;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 40px;
+        width: 20%;
+        text-align: center;
+        display: block;
+        padding: 8px 0;
+
+        &:hover {
+            color: $colornude;
+            transition: 0.5s;
+            transform: rotate(15deg);
+        }
+
+        &:active {
+            color: $colornaranja;
+            transition: 0.5s;
+        }
+
+    }
+}
+
+#copyRight {
+    text-align: center;
+    background-color: $colornude;
+    color: $colorft;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
